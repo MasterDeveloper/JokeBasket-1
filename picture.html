@@ -20,6 +20,7 @@
     <title>Picture Jokes</title>
     
     <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Arbutus+Slab' rel='stylesheet' type='text/css'>
     
     <link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
     <link type="text/css" rel="stylesheet" href="css/bootstrap-theme.css" />
@@ -47,80 +48,69 @@
 
 <!--header start -->
 <div id="header-wrap">
-<div class="pattren-header"></div>
+<div id="header">
+	<div class="pattren-top"></div>
 	<div class="container">
-        <header id="header" class="row">
+        <header class="row logo-wrap">
             <div id="header-left" class="col-md-7 col-sm-12">
-                    <a href="#myModal" role="button"  data-toggle="modal"class="btn btn-default btn-xs">Login</a>
-                    <a href="#myModal-2" role="button"  data-toggle="modal" class="btn btn-default btn-xs">Register</a>
+                <a href="#"><img src="images/logo.png" alt="" /></a>    
             </div>
             <div id="header-right" class="col-md-5 visible-lg visible-md text-right" >
 	            <span class="social-icons">
                     <a href="#" class="facebook"><span class="icon-facebook"></span></a>
-                    <a href="#" class="tumblr"><span class="icon-tumblr"></span></a>
+                    <a href="#" class="twitter"><span class="icon-twitter"></span></a>
                     <a href="#" class="linkedin"><span class="icon-linkedin"></span></a>
                     <a href="#" class="youtube"><span class="icon-youtube"></span></a>
-                    <a href="#" class="rss"><span class="icon-rss"></span></a>
+                    <a href="#" class="google-plus"><span class="icon-google-plus"></span></a>
                 </span>
             </div>
         </header>
-    </div>
-</div>
-<!--header end -->
-
-
-<!--navigation start -->
-<div id="nav-wrap">
-    <nav class="navbar" role="navigation">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      	<div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#"><img src="images/logo.png" /></a>
+        <nav class="navbar" role="navigation">
+          <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <div class="pull-right  login-section">
+                    <a href="#myModal" role="button"  data-toggle="modal"class="btn btn-default">Login</a>
+                    <a href="#myModal-2" role="button"  data-toggle="modal" class="btn btn-default">Register</a>
+                  </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                      <li class="active"><a href="#"><span class="icon-home"></span></a></li>
+                      <li><a href="#">Latest</a></li>
+                      <li><a href="#">Random</a></li>
+                      <li><a href="#">Top Rated</a></li>
+                      <li><a href="#">Most Liked</a></li>
+                      <li><a href="#">Most viewed</a></li>
+                  </ul>
+              </div><!-- /.navbar-collapse -->
           </div>
-    
-      <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="#"><span class="icon-home"></span></a></li>
-              <li><a href="#">Latest</a></li>
-              <li><a href="#">Random</a></li>
-              <li><a href="#">Top Rated</a></li>
-              <li><a href="#">Most Liked</a></li>
-              <li><a href="#">Most viewed</a></li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-		</div>
-    </nav>
-</div>
-<!--navigation end -->
+        </nav>
+    </div>
+</div><!-- Header -->
+</div><!--header end -->
 <div class="banner-wrap">
 	<div class="container">
-    	<div class="inner-section text-center">
-            <h1><small>Search from over</small> 
-    1000,000+ Jokes !</h1>
+    	<div class="inner-section clearfix text-center">
+        	<img class="pull-left" src="images/cartoon.png" alt="" />
+            <h1>Search from over 1000,000+ Jokes !</h1>
 		</div>
     </div>
 </div>
 <div class="search-wrap">
 	<div class="container">
-    	
-        <div class="left-side">
-            <div class="right-side">
-            	<div class="inner-section">
-	                <form role="form" class="form-inline">
-	                  <button class="btn btn-lg pull-right" type="submit"><span class="icon-search"></span></button>
-                      <div class="form-group">
-                        <input type="email" placeholder="Search from over 1000,000+ Jokes..." id="exampleInputEmail2" class="form-control input-lg">
-                      </div>
-                    </form>
-                </div>
-            </div>
+        <div class="inner-section">
+            <form role="form" class="form-inline">
+              <button class="btn btn-lg pull-right" type="submit"><span class="icon-search"></span></button>
+              <div class="form-group">
+                <input type="email" placeholder="Search from over 1000,000+ Jokes..." id="exampleInputEmail2" class="form-control input-lg">
+              </div>
+            </form>
         </div>
         <div class="shadow-bottom"></div>
     </div>
@@ -130,9 +120,12 @@
 	<div class="container">
         <div id="main" class="row author-gallery-wrap author-gallery-wrap-2">
         	<div class="col-sm-9" id="contents">
-            	<div class="pagination-wrap">
-                	<ul class="theme-pagination text-right">
-                    	<li><a href="#" class="icon-chevron-left"></a></li>
+                <div class="page-heading">
+                    <h2><img src="images/sumily-face.png" alt="" /> <span>Picture Jokes</span></h2>
+                </div>
+                <div class="pagination-wrap">
+                    <ul class="theme-pagination text-right">
+                        <li><a href="#" class="icon-chevron-left"></a></li>
                         <li class="active"><a href="#">1</a></li>
                         <li><a href="#">2</a></li>
                         <li><a href="#">3</a></li>
@@ -143,126 +136,56 @@
                         <li><a href="#" class="icon-chevron-right"></a></li>
                     </ul>
                 </div>
-            	<div class="theme-box">
-                	<div class="box-header">
-                    	<h2><img src="images/sumily-face.png" alt="" /> <span>Picture Jokes</span></h2>
-                    </div>
-                    <div class="box-body">
-                    	<div class="row">
-                        	<div class="col-sm-4 thumb-section">
-                            	<img src="images/joke-pic-1.jpg" alt="" class="img-thumbnail thumbnail-lg" />
-                                <div class="btn-group btn-group-justified">
-                                	<a href="#" class="btn btn-orange">View this</a>
-                                    <span class="btn btn-orange">Share :&nbsp;&nbsp;
-                                    	<a href="#" class="icon-facebook"></a>&nbsp;&nbsp;
-                                        <a href="#" class="icon-twitter"></a></span>
-                                </div>
-                            </div><!-- thumb-section -->
-                            <div class="col-sm-4 thumb-section">
-                            	<img src="images/joke-pic-2.jpg" alt="" class="img-thumbnail thumbnail-lg" />
-                                <div class="btn-group btn-group-justified">
-                                	<a href="#" class="btn btn-orange">View this</a>
-                                    <span class="btn btn-orange">Share :&nbsp;&nbsp;
-                                    	<a href="#" class="icon-facebook"></a>&nbsp;&nbsp;
-                                        <a href="#" class="icon-twitter"></a></span>
-                                </div>
-                            </div><!-- thumb-section -->
-                            <div class="col-sm-4 thumb-section">
-                            	<img src="images/joke-pic-3.jpg" alt="" class="img-thumbnail thumbnail-lg" />
-                                <div class="btn-group btn-group-justified">
-                                	<a href="#" class="btn btn-orange">View this</a>
-                                    <span class="btn btn-orange">Share :&nbsp;&nbsp;
-                                    	<a href="#" class="icon-facebook"></a>&nbsp;&nbsp;
-                                        <a href="#" class="icon-twitter"></a></span>
-                                </div>
-                            </div><!-- thumb-section -->
-                            
-                            <div class="col-sm-4 thumb-section">
-                            	<img src="images/joke-pic-1.jpg" alt="" class="img-thumbnail thumbnail-lg" />
-                                <div class="btn-group btn-group-justified">
-                                	<a href="#" class="btn btn-orange">View this</a>
-                                    <span class="btn btn-orange">Share :&nbsp;&nbsp;
-                                    	<a href="#" class="icon-facebook"></a>&nbsp;&nbsp;
-                                        <a href="#" class="icon-twitter"></a></span>
-                                </div>
-                            </div><!-- thumb-section -->
-                            <div class="col-sm-4 thumb-section">
-                            	<img src="images/joke-pic-2.jpg" alt="" class="img-thumbnail thumbnail-lg" />
-                                <div class="btn-group btn-group-justified">
-                                	<a href="#" class="btn btn-orange">View this</a>
-                                    <span class="btn btn-orange">Share :&nbsp;&nbsp;
-                                    	<a href="#" class="icon-facebook"></a>&nbsp;&nbsp;
-                                        <a href="#" class="icon-twitter"></a></span>
-                                </div>
-                            </div><!-- thumb-section -->
-                            <div class="col-sm-4 thumb-section">
-                            	<img src="images/joke-pic-3.jpg" alt="" class="img-thumbnail thumbnail-lg" />
-                                <div class="btn-group btn-group-justified">
-                                	<a href="#" class="btn btn-orange">View this</a>
-                                    <span class="btn btn-orange">Share :&nbsp;&nbsp;
-                                    	<a href="#" class="icon-facebook"></a>&nbsp;&nbsp;
-                                        <a href="#" class="icon-twitter"></a></span>
-                                </div>
-                            </div><!-- thumb-section -->
-                            
-                            <div class="col-sm-4 thumb-section">
-                            	<img src="images/joke-pic-1.jpg" alt="" class="img-thumbnail thumbnail-lg" />
-                                <div class="btn-group btn-group-justified">
-                                	<a href="#" class="btn btn-orange">View this</a>
-                                    <span class="btn btn-orange">Share :&nbsp;&nbsp;
-                                    	<a href="#" class="icon-facebook"></a>&nbsp;&nbsp;
-                                        <a href="#" class="icon-twitter"></a></span>
-                                </div>
-                            </div><!-- thumb-section -->
-                            <div class="col-sm-4 thumb-section">
-                            	<img src="images/joke-pic-2.jpg" alt="" class="img-thumbnail thumbnail-lg" />
-                                <div class="btn-group btn-group-justified">
-                                	<a href="#" class="btn btn-orange">View this</a>
-                                    <span class="btn btn-orange">Share :&nbsp;&nbsp;
-                                    	<a href="#" class="icon-facebook"></a>&nbsp;&nbsp;
-                                        <a href="#" class="icon-twitter"></a></span>
-                                </div>
-                            </div><!-- thumb-section -->
-                            <div class="col-sm-4 thumb-section">
-                            	<img src="images/joke-pic-3.jpg" alt="" class="img-thumbnail thumbnail-lg" />
-                                <div class="btn-group btn-group-justified">
-                                	<a href="#" class="btn btn-orange">View this</a>
-                                    <span class="btn btn-orange">Share :&nbsp;&nbsp;
-                                    	<a href="#" class="icon-facebook"></a>&nbsp;&nbsp;
-                                        <a href="#" class="icon-twitter"></a></span>
-                                </div>
-                            </div><!-- thumb-section -->
-                            
-                            <div class="col-sm-4 thumb-section">
-                            	<img src="images/joke-pic-1.jpg" alt="" class="img-thumbnail thumbnail-lg" />
-                                <div class="btn-group btn-group-justified">
-                                	<a href="#" class="btn btn-orange">View this</a>
-                                    <span class="btn btn-orange">Share :&nbsp;&nbsp;
-                                    	<a href="#" class="icon-facebook"></a>&nbsp;&nbsp;
-                                        <a href="#" class="icon-twitter"></a></span>
-                                </div>
-                            </div><!-- thumb-section -->
-                            <div class="col-sm-4 thumb-section">
-                            	<img src="images/joke-pic-2.jpg" alt="" class="img-thumbnail thumbnail-lg" />
-                                <div class="btn-group btn-group-justified">
-                                	<a href="#" class="btn btn-orange">View this</a>
-                                    <span class="btn btn-orange">Share :&nbsp;&nbsp;
-                                    	<a href="#" class="icon-facebook"></a>&nbsp;&nbsp;
-                                        <a href="#" class="icon-twitter"></a></span>
-                                </div>
-                            </div><!-- thumb-section -->
-                            <div class="col-sm-4 thumb-section">
-                            	<img src="images/joke-pic-3.jpg" alt="" class="img-thumbnail thumbnail-lg" />
-                                <div class="btn-group btn-group-justified">
-                                	<a href="#" class="btn btn-orange">View this</a>
-                                    <span class="btn btn-orange">Share :&nbsp;&nbsp;
-                                    	<a href="#" class="icon-facebook"></a>&nbsp;&nbsp;
-                                        <a href="#" class="icon-twitter"></a></span>
-                                </div>
-                            </div><!-- thumb-section -->
-                        </div><!-- row -->
-                    </div><!-- box-body -->
-                </div><!-- theme-box -->
+                <div class="thumbnail-wrap">
+                    <div class="row">
+                        <div class="col-sm-4 thumb-section">
+                            <img src="images/joke-pic-3.jpg" alt="" class="img-thumbnail" />
+                        </div><!-- thumb-section -->
+                        <div class="col-sm-4 thumb-section">
+                            <img src="images/joke-pic-1.jpg" alt="" class="img-thumbnail" />
+                        </div><!-- thumb-section -->
+                        <div class="col-sm-4 thumb-section">
+                            <img src="images/joke-pic-2.jpg" alt="" class="img-thumbnail" />
+                        </div><!-- thumb-section -->
+                        <div class="col-sm-4 thumb-section">
+                            <img src="images/joke-pic-3.jpg" alt="" class="img-thumbnail" />
+                        </div><!-- thumb-section -->
+                        <div class="col-sm-4 thumb-section">
+                            <img src="images/joke-pic-1.jpg" alt="" class="img-thumbnail" />
+                        </div><!-- thumb-section -->
+                        <div class="col-sm-4 thumb-section">
+                            <img src="images/joke-pic-2.jpg" alt="" class="img-thumbnail" />
+                        </div><!-- thumb-section -->
+                        <div class="col-sm-4 thumb-section">
+                            <img src="images/joke-pic-3.jpg" alt="" class="img-thumbnail" />
+                        </div><!-- thumb-section -->
+                        <div class="col-sm-4 thumb-section">
+                            <img src="images/joke-pic-1.jpg" alt="" class="img-thumbnail" />
+                        </div><!-- thumb-section -->
+                        <div class="col-sm-4 thumb-section">
+                            <img src="images/joke-pic-2.jpg" alt="" class="img-thumbnail" />
+                        </div><!-- thumb-section -->
+                        <div class="col-sm-4 thumb-section">
+                            <img src="images/joke-pic-3.jpg" alt="" class="img-thumbnail" />
+                        </div><!-- thumb-section -->
+                        <div class="col-sm-4 thumb-section">
+                            <img src="images/joke-pic-1.jpg" alt="" class="img-thumbnail" />
+                        </div><!-- thumb-section -->
+                        <div class="col-sm-4 thumb-section">
+                            <img src="images/joke-pic-2.jpg" alt="" class="img-thumbnail" />
+                        </div><!-- thumb-section -->
+                        <div class="col-sm-4 thumb-section">
+                            <img src="images/joke-pic-3.jpg" alt="" class="img-thumbnail" />
+                        </div><!-- thumb-section -->
+                        <div class="col-sm-4 thumb-section">
+                            <img src="images/joke-pic-1.jpg" alt="" class="img-thumbnail" />
+                        </div><!-- thumb-section -->
+                        <div class="col-sm-4 thumb-section">
+                            <img src="images/joke-pic-2.jpg" alt="" class="img-thumbnail" />
+                        </div><!-- thumb-section -->
+
+                    </div><!-- row -->
+                </div><!-- box-body -->
                 <div class="pagination-wrap">
                 	<ul class="theme-pagination text-right">
                     	<li><a href="#" class="icon-chevron-left"></a></li>
@@ -279,17 +202,11 @@
             </div><!-- col-sm-9 -->
             <aside id="sidebar" class="col-sm-3">
                 <div class="sidebar-section">
-                    <div class="section-header yellow-header">
+                    <div class="blue-section">
                         <h3>You send us your jokes</h3>
                         <p>we put them on the homepage.</p>
-                    </div>
-                    <div class="submit-section">
-                        <span><img src="images/sumily-face-2.png" alt="" />
-                            <a href="#" class="btn btn-lg theme-btn">Submit your jokes</a>
-                        </span>
-                    </div>
-                    <div class="content-section">
-                    	<h3>This Week's Favorite</h3>
+                        <a href="#" class="btn btn-lg btn-info">Submit your jokes</a>
+                    	<h4><img src="images/sumily-face.png" alt="" /> This Week's Favorite</h4>
                         <div class="comments-popup">
                         	<p>Yo mama's so ugly she peaked in preschool #ccjokes </p>
                         </div>
@@ -297,12 +214,12 @@
                     </div>
                 </div>
                 <div class="sidebar-section">
+	                <h4>Subscribe your Email address</h4>
                 	<div class="subscribe-section">
-                    	<h3>Subscribe your Email address</h3>
-                        <div class="input-group">
+                        <div class="input-group input-group-lg">
                             <input type="text" class="form-control">
                             <span class="input-group-btn">
-                                <button class="btn btn-yellow" type="button">Submit</button>
+                                <button class="btn btn-blue" type="button">Submit</button>
                             </span>
                         </div><!-- /input-group -->
                     </div><!-- subscribe-section -->
@@ -328,7 +245,7 @@
         	<div class="row inner-section">
             	<div class="col-sm-2">
                 	<h3>Links</h3>
-                    <ul	class="caret-list">
+                    <ul	class="list-unstyled">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Latest</a></li>
                         <li><a href="#">Random</a></li>
@@ -340,7 +257,7 @@
                 <div class="col-sm-4">
                 	<h3>Featured</h3>
                     <div class="row">
-                        <ul	class="icons-list col-md-6">
+                        <ul	class="list-unstyled col-md-6">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">Latest</a></li>
                             <li><a href="#">Random</a></li>
@@ -348,7 +265,7 @@
                             <li><a href="#">Most Liked</a></li>
                             <li><a href="#">most Viewed</a></li>
                         </ul>
-                        <ul	class="icons-list col-md-6">
+                        <ul	class="list-unstyled col-md-6">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">Latest</a></li>
                             <li><a href="#">Random</a></li>
@@ -377,39 +294,28 @@
                             <p>Bill Cosby's New Special to air on Comedy Central</p>
                             <p class="black-text">"Far From Finished" debuts; . November 23.</p>
                         </div>
+                        <a href="#">Read More >></a>
                     </div>
+                    
                 </div>
                 <div class="col-sm-3">
                 	<h3>Fllow us on</h3>
-                    <p class="social-icons">
-                        <a class="facebook" href="#"><span class="icon-facebook"></span></a>
-                        <a class="tumblr" href="#"><span class="icon-tumblr"></span></a>
-                        <a class="linkedin" href="#"><span class="icon-linkedin"></span></a>
-                        <a class="youtube" href="#"><span class="icon-youtube"></span></a>
-                        <a class="rss" href="#"><span class="icon-rss"></span></a>
-                    </p>
-                    <h4>Leagal Business</h4>
-                    <ul	class="list-unstyled text-sm">
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">Ad Choices</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
+                    <ul class="social-icons list-unstyled">
+                        <li><a class="facebook" href="#"><span class="icon-facebook"></span></a> Facebook</li>
+                        <li><a class="twitter" href="#"><span class="icon-twitter"></span></a> Twitter</li>
+                        <li><a class="linkedin" href="#"><span class="icon-linkedin"></span></a> Linked in</li>
+                        <li><a class="youtube" href="#"><span class="icon-youtube"></span></a> Youtube</li>
+                        <li><a class="google-plus" href="#"><span class="icon-google-plus"></span></a> Google plus</li>
                     </ul>
+                    
                 </div>
             </div>
-        	
-
-
-
-
-
-        	
 	    </div>
     </footer>
     <div id="footer-bottom">
     	<div class="footer-bottom">
             <div class="container">
-                <p><span>Copyright &copy; Quotebasket Script V2</span></p>
+                <p><span>Copyright &copy; 2013-2014 Jokes Basket All Rules Reseved</span></p>
             </div>    
 		</div>
     </div>
