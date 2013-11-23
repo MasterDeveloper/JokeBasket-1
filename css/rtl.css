@@ -94,13 +94,20 @@ fieldset[disabled] .btns {
 .rtl ul {
   padding-right: 0;
 }
+.rtl .col-md-6 {
+  padding-right: 15px;
+}
 .rtl .navbar-toggle {
-  float: left;
-  margin-right: 0;
-  margin-left: 15px;
+  float: right;
+  margin-right: 15;
+  margin-left: 0px;
 }
 .rtl .navbar-header {
-  float: right;
+  float: left;
+}
+.rtl .navbar .navbar-nav > li > a {
+  border-left: 2px groove #68C4DD;
+  border-right: none;
 }
 .rtl .container > .navbar-header,
 .rtl .container > .navbar-collapse {
@@ -112,6 +119,9 @@ fieldset[disabled] .btns {
 }
 .rtl .navbar-right {
   float: left !important;
+}
+.rtl .navbar-nav {
+  float: right;
 }
 .rtl .slider-wrap {
   direction: ltr;
@@ -140,16 +150,37 @@ fieldset[disabled] .btns {
   .rtl .navbar-header {
     float: none;
   }
+  .rtl .navbar-header .login-section {
+    float: left;
+  }
   .rtl .navbar-brand {
     float: right;
   }
   .rtl .navbar-right {
     float: none !important;
   }
+  .rtl .navbar-nav {
+    float: none;
+  }
+  .rtl .navbar .navbar-nav > li > a {
+    border: none;
+    float: none;
+  }
+}
+.rtl .comments-wrap h3:before,
+.rtl .joke-section h2:before,
+.rtl .joke-detail-section h2:before,
+.rtl .sep-left:before {
+  left: auto;
+  right: 0;
+}
+.rtl .sep-right:before {
+  left: 0;
+  right: auto;
 }
 .rtl .search-wrap .form-group {
   margin-right: 0;
-  margin-left: 80px;
+  margin-left: 65px;
 }
 .rtl .search-wrap .btn {
   -webkit-box-shadow: none;
@@ -161,20 +192,11 @@ fieldset[disabled] .btns {
 .rtl #contents {
   padding: 0 0 0 10px;
 }
-.rtl .joke-header {
-  margin-bottom: 12px;
-  -moz-border-radius: 5px 5px 0 5px;
-  -webkit-order-radius: 5px 5px 0 5px;
-  border-radius: 5px 5px 0 5px;
-  margin-right: -30px;
-  margin-left: 0;
-  padding: 3px 30px 5px;
-  position: relative;
+.rtl .sidebar-section .content-section {
+  padding: 15px 0;
 }
-.rtl .joke-header:before {
-  background: url("../images/heading-left-rtl.png") no-repeat scroll right 0;
-  left: auto;
-  right: 0;
+.rtl #footer .social-icons a {
+  margin: 0 0 0 5px;
 }
 .rtl .icons-list {
   padding: 0 15px;
@@ -206,11 +228,22 @@ fieldset[disabled] .btns {
   -webkit-order-radius: 0 7px 7px 0;
   border-radius: 0 7px 7px 0;
 }
+.rtl .nav-tabs > li > a {
+  margin: 0 0 0 4px;
+}
+.rtl .tab-content {
+  -moz-border-radius: 7px 0 7px 7px;
+  -webkit-order-radius: 7px 0 7px 7px;
+  border-radius: 7px 0 7px 7px;
+}
 @media (max-width: 767px) {
   .rtl .sidebar-section {
     text-align: center;
   }
   .rtl .theme-pagination {
+    text-align: center !important;
+  }
+  .rtl .joke-section .text-right {
     text-align: center !important;
   }
 }

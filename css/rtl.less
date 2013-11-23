@@ -24,11 +24,14 @@
 .icon-chevron-left:before { content: "\f054";}
 
 ul{padding-right:0;}
-.navbar-toggle{float:left;margin-right:0;margin-left:15px;}
-.navbar-header{float: right;}
+.col-md-6{padding-right:15px;}
+.navbar-toggle{float:right;margin-right:15;margin-left:0px;}
+.navbar-header{float: left;}
+.navbar .navbar-nav > li > a{border-left: 2px groove #68C4DD; border-right:none;}
 .container > .navbar-header, .container > .navbar-collapse{margin:0 -15px;}
 .navbar > .container .navbar-brand{margin-right:15px;margin-left:0;}
 .navbar-right{float:left !important;}
+.navbar-nav{float:right;}
 .slider-wrap{direction:ltr;}
 .nav-tabs > li{float:right;margin-right:0; margin-left:5px;}
 
@@ -45,6 +48,7 @@ ul{padding-right:0;}
 
 @media (max-width: 767px){
 	[class^="col-lg-"],[class^="col-md-"],[class^="col-sm-"]{float:none;}
+
 }
 
 	
@@ -52,21 +56,42 @@ ul{padding-right:0;}
 		.navbar-header{
 			float:none;
 		}
+		.navbar-header .login-section{
+			float:left;
+		}
 		.navbar-brand{
 			float:right;
 		}
 		.navbar-right{
 			float:none !important;
 		}
+		.navbar-nav{
+			float:none;
+		}
+		.navbar .navbar-nav > li > a{
+			border:none;
+			float:none;
+		}
 	}
 
 
 /* According to Theme Styles */
+.comments-wrap h3:before,
+.joke-section h2:before,
+.joke-detail-section h2:before,	
+.sep-left:before{
+	left:auto;
+	right:0;
+}
+.sep-right:before{
+	left:0;
+	right:auto;
+}
 
 .search-wrap{
 	.form-group{
 		margin-right:0;
-		margin-left:80px;
+		margin-left:65px;
 	}
 	.btn{
 		.box-shadow(none);
@@ -79,22 +104,13 @@ ul{padding-right:0;}
 	padding:0 0 0 10px;
 }
 
-
-.joke-header {
-    margin-bottom: 12px;
-	.radius(5px 5px 0 5px);
-    margin-right: -30px;
-	margin-left:0;
-    padding: 3px 30px 5px;
-    position: relative;
-}
-.joke-header:before {
-    background: url("../images/heading-left-rtl.png") no-repeat scroll right 0;
-    left: auto;
-	right:0;
+.sidebar-section .content-section{
+	padding:15px 0;
 }
 
-
+#footer .social-icons a{
+	margin:0 0 0 5px;
+}
 .icons-list{
 	padding:0 15px;
 	text-align:right;
@@ -123,6 +139,13 @@ ul{padding-right:0;}
 .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle){
 	.radius(0 7px 7px 0);
 }
+.nav-tabs > li > a{
+	margin:0 0 0 4px;
+}
+.tab-content{
+	.radius(7px 0 7px 7px);
+}
+
 
 @media (max-width: 767px) {
 	.sidebar-section{
@@ -131,5 +154,9 @@ ul{padding-right:0;}
 	.theme-pagination{
 		text-align:center !important;
 	}
+	.joke-section .text-right{
+		text-align:center !important;
+	}
 }
+
 }

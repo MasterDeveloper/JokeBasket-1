@@ -65,32 +65,30 @@
                 </span>
             </div>
         </header>
-        <nav class="navbar" role="navigation">
-          <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <header role="navigation" class="navbar">
+            <div class="navbar-header">
+                <button data-target=".bs-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                  </button>
-                  <div class="pull-right  login-section">
+                </button>
+                <div class="login-section">
                     <a href="#myModal" role="button"  data-toggle="modal"class="btn btn-default">Login</a>
                     <a href="#myModal-2" role="button"  data-toggle="modal" class="btn btn-default">Register</a>
-                  </div>
-          <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav">
-                      <li class="active"><a href="#"><span class="icon-home"></span></a></li>
-                      <li><a href="#">Latest</a></li>
-                      <li><a href="#">Random</a></li>
-                      <li><a href="#">Top Rated</a></li>
-                      <li><a href="#">Most Liked</a></li>
-                      <li><a href="#">Most viewed</a></li>
-                  </ul>
-              </div><!-- /.navbar-collapse -->
-          </div>
-        </nav>
+                </div>
+            </div>
+            <nav role="navigation" class="navbar-collapse bs-navbar-collapse in" style="height: auto;">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#"><span class="icon-home"></span></a></li>
+                    <li><a href="#">Latest</a></li>
+                    <li><a href="#">Random</a></li>
+                    <li><a href="#">Top Rated</a></li>
+                    <li><a href="#">Most Liked</a></li>
+                    <li><a href="#">Most viewed</a></li>
+                </ul>
+            </nav>
+		</header>
     </div>
 </div><!-- Header -->
 </div><!--header end -->
@@ -119,7 +117,7 @@
 <div id="main-wrap">
 	<div class="container">
         <div id="main" class="row author-gallery-wrap author-gallery-wrap-2">
-        	<div class="col-sm-9" id="contents">
+        	<div class="col-md-9 col-sm-8" id="contents">
             	<div class="theme-box">
                     <div class="box-body">
                         <div class="joke-detail-section joke-section">
@@ -185,7 +183,7 @@
                                      	<span class="divider">|</span>
                                         <span class="comment-date">18 days ago</span> 
                                      </p>
-                                     <div class="white-box">
+                                     <div class="massage-box">
                                      	<p>hehehe very very boring...</p>
                                      </div>
                                      <div class="comment-footer">
@@ -204,7 +202,7 @@
                                      	<span class="divider">|</span>
                                         <span class="comment-date">18 days ago</span> 
                                      </p>
-                                     <div class="white-box">
+                                     <div class="massage-box">
                                      	<p>hehehe very very boring...</p>
                                      </div>
                                      <div class="comment-footer">
@@ -223,7 +221,7 @@
                                      	<span class="divider">|</span>
                                         <span class="comment-date">18 days ago</span> 
                                      </p>
-                                     <div class="white-box">
+                                     <div class="massage-box">
                                      	<p>hehehe very very boring...</p>
                                      </div>
                                      <div class="comment-footer">
@@ -238,20 +236,8 @@
                 <div class="text-center">
                 	<a href="#" class="btn btn-blue">Read More Comments</a>
                 </div>
-                
-                
-                <!-- <div class="theme-tabs-wrap">
-                    <ul class="nav nav-tabs">
-                        <li><a href="#home" data-toggle="tab">Home</a></li>
-                        <li><a href="#profile" data-toggle="tab">Profile</a></li>
-                    </ul>
-	                <div class="tab-content">
-                        <div class="tab-pane active" id="home">TAb Content Here</div>
-                        <div class="tab-pane" id="profile">TAb Content Here...</div>
-                    </div>
-				</div>-->
             </div><!-- col-sm-9 -->
-            <aside id="sidebar" class="col-sm-3">
+            <aside id="sidebar" class="col-md-3 col-sm-4">
                 <div class="sidebar-section">
                     <div class="blue-section">
                         <h3>You send us your jokes</h3>
